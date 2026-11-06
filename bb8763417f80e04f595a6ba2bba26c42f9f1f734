@@ -1,0 +1,3 @@
+The license text was not corrupted on purpose: ca6053098b was pushed from a checkout whose LICENSE was written from a mangled copy of the GPL-2.0 appendix, and the result was force-pushed over the good 8da3dfa52ef4 commit two minutes after it was made. Rather than re-authoring the license, the fix cherry-picks the original clean commit so the file content is provably the canonical FSF GPL-2.0 text (verified by sha256 against the copy in spivanatalie64/Ace).
+
+The add-pullfrog branch predates both license commits, so it ships with no LICENSE at all; it is rebased onto this branch so the in-progress work inherits the corrected license instead of duplicating it.
